@@ -3,9 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>PokerAmi</title>
 </head>
 <body>
-    <p>PokerAmi</p>
+    <div class="container">
+    <h1>PokerAmi</h1>
+    <button onclick="createGame()">🎲 Crea Partita</button>
+    <div class="join">
+      <input type="text" id="joinCode" placeholder="Codice partita">
+      <button onclick="joinGame()">➕ Unisciti</button>
+    </div>
+  </div>
+
+  <script>
+    function createGame() {
+      const code = Math.random().toString(36).substr(2, 6).toUpperCase();
+      localStorage.setItem('gameCode', code);
+      localStorage.setItem('isDealer', 'true');
+      localStorage.setItem('players', JSON.stringify([]));
+      window.location.href = 'game.html';
+    }
+
+    function joinGame() {
+      const code = document.getElementById('joinCode').value.trim().toUpperCase();
+      if (code.length === 6) {
+        localStorage.setItem('gameCode', code);
+        localStorage.setItem('isDealer', 'false');
+        window.location.href = 'game.html';
+      } else {
+        alert("Inserisci un codice valido (6 lettere/numeri).");
+      }
+    }
+  </script>
 </body>
 </html>
