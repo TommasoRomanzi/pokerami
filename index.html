@@ -4,37 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.ico" type="image/x-icon">
     <title>PokerAmi</title>
 </head>
 <body>
     <div class="container">
-    <h1>PokerAmi</h1>
-    <button onclick="createGame()">🎲 Crea Partita</button>
-    <div class="join">
-      <input type="text" id="joinCode" placeholder="Codice partita">
-      <button onclick="joinGame()">➕ Unisciti</button>
+      <h1>PokerAmi</h1> <br><br>
+      <button onclick="createGame()">🎲 Create Code</button> <br>
+      <p>______</p> <br>
+      <div class="join">
+        <input type="text" id="joinCode" placeholder="Code"> <br>
+        <button onclick="joinGame()">Join</button>
+      </div>
     </div>
-  </div>
+    <br>
+    <div class="container">
+      <h3>What is PokerAmi?</h3>
+      <p>Play poker</p>
 
-  <script>
-    function createGame() {
-      const code = Math.random().toString(36).substr(2, 6).toUpperCase();
-      localStorage.setItem('gameCode', code);
-      localStorage.setItem('isDealer', 'true');
-      localStorage.setItem('players', JSON.stringify([]));
-      window.location.href = 'game.html';
-    }
+      <br>
 
-    function joinGame() {
-      const code = document.getElementById('joinCode').value.trim().toUpperCase();
-      if (code.length === 6) {
-        localStorage.setItem('gameCode', code);
-        localStorage.setItem('isDealer', 'false');
-        window.location.href = 'game.html';
-      } else {
-        alert("Inserisci un codice valido (6 lettere/numeri).");
-      }
-    }
-  </script>
+      <h3>How can I use it?</h3>
+      <p>
+        1. Choose a trusted person in the group. He will be the dealer, the person that deal the game <br>
+        2. The dealer will create a code and give it to the group. A max of 8 people can join. <br>
+        3. Once everybody is ready everybody choose the amount of money they have on their plate. <br>
+        4. The dealer will start the match and the roundes. During the match every player can Bet/Raise/Fold and at the end of the game the dealer will assign the prize to the winner. <br>
+        5. Everybody can cashout and at the end of the game the software will tell you how much you owe/earned.
+      </p>
+    </div>
 </body>
 </html>

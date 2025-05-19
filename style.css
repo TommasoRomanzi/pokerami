@@ -1,6 +1,12 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background: #111;
+  font-family: Roboto, sans-serif;
+  background: #0c0b0b;
   color: #fff;
   text-align: center;
   padding: 30px;
@@ -9,7 +15,7 @@ body {
 .container {
   max-width: 600px;
   margin: auto;
-  background: #222;
+  background: #131111;
   padding: 20px;
   border-radius: 10px;
 }
@@ -17,7 +23,7 @@ body {
 input, button {
   padding: 10px;
   margin: 5px;
-  border-radius: 5px;
+  border-radius: 4px;
   border: none;
 }
 
@@ -26,13 +32,13 @@ input {
 }
 
 button {
-  background-color: #28a745;
+  background-color: #144920;
   color: white;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #218838;
+  background-color: #0c2e14;
 }
 
 .player {

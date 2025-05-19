@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PokerAmi - Partita</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+  <title>PokerAmi</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Partita <span id="roomCode"></span></h1>
+    <div id="playerSection"></div>
+
+    <div id="dealerActions" style="display: none;">
+      <input type="text" id="playerName" placeholder="Nome giocatore">
+      <input type="number" id="initialStack" placeholder="€ iniziali" value="10">
+      <button onclick="addPlayer()">Aggiungi giocatore</button>
+    </div>
+
+    <button onclick="endGame()">EndGame</button>
+  </div>
+</body>
+</html>
