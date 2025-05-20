@@ -1,3 +1,15 @@
 git add .
 git commit -m "aggiornamento"
 git push
+
+Roadmap :
+
+[ ] Crea grafica full screen con interfaccia utente intuitiva per la gestione del gioco 
+        - players (carina per puntare/cashout)
+        - dealer è quello che si assicura che gestisce la partita 
+[ ] Definisci il flusso di gioco:
+        - Regole di poker
+        - Modalità di gioco (turni, gestione delle puntate, distribuzione delle fiches, ecc.)
+[ ] Trova un modo per fare il server (node) e gioco condiviso con codice partita tipo among us, inserisci importo entrata a giocatore, n giocatori, alla fine ti dice quanto ognuno ha vinto
+        - Meccanismo di cashout/transazioni automatiche al termine della partita
+[ ] Completato
