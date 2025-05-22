@@ -13,3 +13,6 @@ Roadmap :
 [ ] Trova un modo per fare il server (node) e gioco condiviso con codice partita tipo among us, inserisci importo entrata a giocatore, n giocatori, alla fine ti dice quanto ognuno ha vinto
         - Meccanismo di cashout/transazioni automatiche al termine della partita
 [ ] Completato
+
+
+Voglio creare un sito/app web based, usando html, css per la grafica e javascript per la parte tecnica dietro. L'app serve per gestire le fiches del gioco del poker tra amici (es. ognuno ha 10€ in fiches, il dealer crea una partita a cui tutti possono accedere attraverso un codice (tipo amongus) e alla fine di ogni mano il dealer assegna a uno o più giocatori la vincita). Il gioco non deve gestire soldi veri ne deve gestire la partita (sarà il dealer, ovvero colui che crea il codice di partita, a stabilire quando il giro deve continuare e quando i soldi vanno assegnati a un giocatore), deve solo gestire soldi virtuali e una volta finita la partita non serve che salvi i dati. Come posso procedere?
